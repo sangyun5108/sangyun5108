@@ -1,8 +1,54 @@
 :root {
   --color-white: #ffffff;
   --color-black: #000000;
+  --weight-regular:700;
 }
 
 * {
   box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+/* navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-white);
+  padding: 20px 200px;
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  box-shadow: 0 4px 4px -4px black;
+}
+
+.navbar__logo {
+  min-width: 100px;
+  line-height: 51px;
+  text-align: center;
+}
+
+.navbar__logo a {
+  color: var(--color-black);
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu .navbar__item {
+  margin-right: 50px;
+  line-height: 51px;
 }
