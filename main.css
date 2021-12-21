@@ -10,6 +10,14 @@
   margin: 0px;
 }
 
+html {
+  height:100vh;
+}
+
+section {
+  height: 100vh;
+}
+
 ul {
   padding: 0px;
 }
@@ -25,13 +33,16 @@ a {
 
 /* navbar */
 #navbar {
+  width: 100vw;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   background-color: var(--color-white);
-  padding: 20px 200px;
+  padding: 20px 100px;
   font-weight: var(--weight-regular);
   color: var(--color-black);
-  box-shadow: 0 4px 4px -4px black;
+  box-shadow: 0 3px 4px -1px black;
+  position: fixed;
 }
 
 .navbar__logo {
@@ -51,4 +62,28 @@ a {
 .navbar__menu .navbar__item {
   margin-right: 50px;
   line-height: 51px;
+}
+
+/* Home */
+
+#home{
+  border-bottom: 1px solid var(--color-black);
+  background-color: cornflowerblue;
+}
+
+#about{
+  background-color: cyan;
+}
+
+#project{
+  background-color: darkgray;
+}
+
+#concat {
+  background-color: darkkhaki;
+}
+
+#footer {
+  height: 10vh;
+  background-color: darkslategray;
 }
