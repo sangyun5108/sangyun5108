@@ -21,6 +21,12 @@ section {
   height: 100vh;
 }
 
+button {
+  outline: none;
+  background: none;
+  border: none;
+}
+
 ul {
   padding: 0px;
 }
@@ -247,9 +253,130 @@ a {
   font-size: 20px;
 }
 
+/* Project */
 
 #project{
-  background-color: darkgray;
+  background-color: var(--color-white);
+  min-height:110vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project_title {
+  text-align: center;
+  font-size:50px;
+}
+
+.project_buttons{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.project_button{
+  width: 130px;
+  height: 30px;
+  outline: none;
+  background: none;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  margin-bottom: 30px;
+}
+
+.project_button:first-child{
+  background-color: #E2758C;
+  color: #EFEFEF;
+}
+
+.project_button:hover{
+  background-color: #E2758C;
+  color: var(--color-white);
+  transition: all 0.2s linear;
+}
+
+.project_projects {
+  width: 1300px;
+  min-width: 1300px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project_container {
+  width: 30%;
+  min-width: 30%;
+  height: 350px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: var(--color-white);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 10px 5px;
+}
+
+.portfolio {
+  background-image: url('./images/portfolioweb.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.project_description {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color:var(--color-black);
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  position:relative;
+}
+
+.project_description {
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.project_description * {
+  transform: translateY(10px);
+  transition: all 0.3s ease-in;
+}
+
+.project_description:hover{
+  opacity: 0.7;
+}
+
+.project_description:hover *{
+  transform: translateY(0px);
+  transition: all 0.3s ease-in;
+}
+
+.description_divide {
+  height: 1px;
+  width: 30px;
+  margin: 5px 0px 10px 0px;
+  background-color: var(--color-white);
+}
+
+.project_description a {
+  display: inline;
+  font-size: 20px;
+  color: var(--color-white);
+}
+
+.description_links {
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 25px;
+}
+
+.link_image {
+  width: 20px;
+  height: auto;
 }
 
 #concat {
