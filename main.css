@@ -147,7 +147,7 @@ a {
   margin-bottom: 50px;
 }
 
-.about_imageZone {
+.image_Container {
   width: 50vw;
   min-width:400px;
   padding: 40px;
@@ -162,7 +162,7 @@ a {
   font-size: 30px;
 }
 
-.about_linkZone {
+.link_Container {
   min-width: 230px;
   margin-top: 50px;
   display:flex;
@@ -196,6 +196,9 @@ a {
   min-width: 300px;
   min-height: 300px;
   border-radius: 50%;
+  background-image: url('./images/profile_image.JPG');
+  background-position: center;
+  background-size: cover;
 }
 
 .about_info {
@@ -209,12 +212,12 @@ a {
   margin-bottom: 20px;
 }
 
-.info_listZone{
+.list_Container{
   display:flex;
   justify-content: space-around;
 }
 
-.info_itemZone{
+.item_Container{
   width: 260px;
   min-width: 260px;
   height:230px;
@@ -225,6 +228,14 @@ a {
 
 .info_items>li{
   margin-top: 20px;
+}
+
+.info_divide{
+  height: 150px;
+  width: 1px;
+  margin-top: 35px;
+  background-color: var(--color-black);
+  opacity: 0.2;
 }
 
 .description {
