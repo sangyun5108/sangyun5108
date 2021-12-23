@@ -94,10 +94,12 @@ a {
   font-size: 20px;
 }
 
-@media screen and (max-width:768px) {
-  
-  /* navbar */
+@media screen and (max-width:1024px) {
 
+}
+
+@media screen and (max-width:768px) {
+  /* navbar */
   #navbar {
     display: flex;
     flex-direction: column;
@@ -116,18 +118,8 @@ a {
     display: flex;
     justify-content: center;
   }
-
-  .home_pharse {
-    margin-top: 70px;
-    font-size: 25px;
-  }
 }
 
-@media screen and (max-width:320px) {
-  .navbar__item {
-    margin: 0px 15px; 
-  }
-}
 /* Home */
 
 #home{
@@ -142,39 +134,46 @@ a {
   flex-direction: column;
 }
 
-.home_pharse {
+.home__pharse {
   font-size: 40px;
-  min-width: 250px;
+  min-width: 400px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
-.home_subpharse{
-  min-width: 250px;
+.home__subpharse{
+  min-width: 400px;
   text-align: center;
   position: relative;
 }
 
-.home_to_about {
+.home__to__about {
+  width: 100px;
   height: 25px;
   text-align: center;
   background-color: none;
-  color: var(--color-white);
+  color: var(--color-black);
   cursor: pointer;
-  border: 1px solid white;
-  transform: scale(1.2);
+  border: 1px solid var(--color-black);
+  border-radius: 5px;
   transition: all 0.2s ease-in;
   font-weight: bold;
-  margin:200px auto;
+  margin: 10px auto;
 }
 
-.home_to_about:hover{
-  background-color: var(--color-white);
-  color: var(--color-black);
+.home__to__about:hover{
+  background-color:var(--color-black);
+  color: var(--color-white);
   transition: all 0.2s ease-in;
 }
 
+@media screen and (max-width:768px) {
+  .home__pharse {
+    margin-top: 80px;
+  }
+}
 /* about */
+
 
 #about{
   background-color: var(--color-white);
@@ -184,25 +183,23 @@ a {
   align-items: center;
 }
 
-.about_card {
+.about__card {
   border-radius: 10px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 10px 5px;
   width: 1300px;
-  min-width: 1300px;
   height:70vh;
   display: flex;
   
 }
 
-.about_title {
+.about__title {
   font-size: 50px;
   font-weight:var(--weight-regular);
   margin: 50px 0px;
 }
 
-.image_Container {
+.image__Container {
   width: 50vw;
-  min-width:400px;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -210,19 +207,19 @@ a {
   justify-content: center;
 }
 
-.about_name {
+.about__name {
   margin-top: 30px;
   font-size: 30px;
 }
 
-.link_Container {
+.link__Container {
   min-width: 230px;
   margin-top: 50px;
   display:flex;
   justify-content: space-between;
 }
 
-.about_linkBtn {
+.about__linkBtn {
   width: 100px;
   height: 35px;
   background-color: var(--color-black);
@@ -234,17 +231,17 @@ a {
   transition: all 0.2s linear;
 }
 
-.about_linkBtn:hover{
+.about__linkBtn:hover{
   opacity: 1.0;
   cursor: pointer;
   transition: all 0.2s linear;
 }
 
-.about_linkBtn>a{
+.about__linkBtn>a{
   color: var(--color-white);
 }
 
-#about_image {
+#about__image {
   background-color: black;
   min-width: 300px;
   min-height: 300px;
@@ -254,25 +251,26 @@ a {
   background-size: cover;
 }
 
-.about_info {
+.about__info {
   padding: 20px;
   background-color: #FDF4EA;
   min-width: 670px;
   height: 35vh;
+  flex-wrap: wrap;
 }
 
-.info_items{
+.info__items{
   height: 130px;
   margin-bottom: 20px;
   padding-left: 10px;
 }
 
-.list_Container{
+.list__Container{
   display:flex;
   justify-content: space-around;
 }
 
-.item_Container{
+.item__Container{
   width: 260px;
   min-width: 260px;
   height:230px;
@@ -281,11 +279,11 @@ a {
   justify-content: center;
 }
 
-.info_items>li{
+.info__items>li{
   margin-top: 20px;
 }
 
-.info_divide{
+.info__divide{
   height: 150px;
   width: 1px;
   margin-top: 35px;
@@ -302,6 +300,18 @@ a {
   font-size: 20px;
 }
 
+@media screen and (max-width:768px) {
+  .about__card {
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .image__Container {
+    margin: 0 auto;
+  }
+}
+
 /* Skills */
 
 #skills {
@@ -312,13 +322,13 @@ a {
   align-items: center;
 }
 
-.skills_title {
+.skills__title {
   font-size: 50px;
   text-align: center;
   margin: 100px 0px 50px 0px;
 }
 
-.skills_container {
+.skills__container {
   width:1300px;
   min-width: 1300px;
   height: 300px;
@@ -330,7 +340,7 @@ a {
   align-items: center;
 }
 
-.skills_image {
+.skills__image {
   margin: 0 50px;
 }
 
@@ -360,17 +370,17 @@ a {
   align-items: center;
 }
 
-.project_title {
+.project__title {
   text-align: center;
   font-size:50px;
 }
 
-.project_buttons{
+.project__buttons{
   margin-top: 30px;
   text-align: center;
 }
 
-.project_button{
+.project__button{
   width: 130px;
   height: 30px;
   outline: none;
@@ -382,18 +392,18 @@ a {
   margin-bottom: 30px;
 }
 
-.project_button:first-child{
+.project__button:first-child{
   background-color: #E2758C;
   color: #EFEFEF;
 }
 
-.project_button:hover{
+.project__utton:hover{
   background-color: #E2758C;
   color: var(--color-white);
   transition: all 0.2s linear;
 }
 
-.project_projects {
+.project__projects {
   width: 1500px;
   min-width: 1400px;
   display: flex;
@@ -401,7 +411,7 @@ a {
   flex-wrap: wrap;
 }
 
-.project_container {
+.project__container {
   width: 25%;
   min-width: 30%;
   height: 350px;
@@ -417,7 +427,7 @@ a {
   background-size: cover;
 }
 
-.project_description {
+.project__description {
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -431,39 +441,39 @@ a {
   position:relative;
 }
 
-.project_description {
+.project__description {
   opacity: 0;
   transition: all 0.3s ease-in;
 }
 
-.project_description * {
+.project__description * {
   transform: translateY(10px);
   transition: all 0.3s ease-in;
 }
 
-.project_description:hover{
+.project__description:hover{
   opacity: 0.7;
 }
 
-.project_description:hover *{
+.project__description:hover *{
   transform: translateY(0px);
   transition: all 0.3s ease-in;
 }
 
-.description_divide {
+.description__divide {
   height: 1px;
   width: 30px;
   margin: 5px 0px 10px 0px;
   background-color: var(--color-white);
 }
 
-.project_description a {
+.project__description a {
   display: inline;
   font-size: 20px;
   color: var(--color-white);
 }
 
-.description_links {
+.description__links {
   width: 50px;
   display: flex;
   justify-content: space-between;
@@ -471,12 +481,12 @@ a {
   bottom: 25px;
 }
 
-.link_image {
+.link__image {
   width: 20px;
   height: auto;
 }
 
-.goback_first {
+.goback__first {
   margin-top: 50px;
   font-size: 40px;
   cursor: pointer;
