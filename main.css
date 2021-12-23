@@ -72,7 +72,7 @@ a {
 }
 
 .navbar__item {
-  margin-right: 50px;
+  margin: 0 25px;
   line-height: 51px;
   opacity: 0.5;
   cursor: pointer;
@@ -481,6 +481,7 @@ a {
   
   .navbar__menu__Container {
     width: 100vw;
+    min-width: 250px;
   }
 
   .navbar__menu {
