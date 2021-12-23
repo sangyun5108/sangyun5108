@@ -318,78 +318,6 @@ a {
   width: 150px;
 }
 
-@media screen and (max-width:768px) {
-
-  /* navbar */
-  #navbar {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .navbar__toggle-btn {
-    display: block;
-  }
-  
-  .navbar__menu__Container {
-    width: 100vw;
-    min-width: 250px;
-  }
-
-  .navbar__menu {
-    display: flex;
-    justify-content: center;
-  }
-
-  /* about */
-  .about__card {
-    flex-direction: column;
-    width: 440px;
-    height: 1000px;
-    margin: 0 auto;
-  }
-
-  .list__Container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .image__Container {
-    margin: 0 auto;
-  }
-
-  .item__Container {
-    height: 300px;
-    margin: 0 auto;
-  }
-
-  .about__card {
-    height: 1720px;
-  }
-
-  .about__info {
-    height: 650px;
-  }
-
-  .description {
-    height: 540px;
-  }
-
-  .info__divide {
-    width: 250px;
-    height: 1px;
-    margin: 0 auto;
-  }
-
-  /* skill */
-
-  .skills__container {
-    flex-wrap: wrap;
-    width: 450px;
-    height: 400px;
-    margin: 0 auto;
-  }
-}
-
 /* Project */
 
 #project{
@@ -435,15 +363,14 @@ a {
 
 .project__projects {
   width: 1500px;
-  min-width: 1400px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .project__container {
-  width: 25%;
-  min-width: 30%;
+  width: 440px;
+  min-width: 440px;
   height: 350px;
   margin: 25px;
   border-radius: 10px;
@@ -520,6 +447,83 @@ a {
   margin-top: 50px;
   font-size: 40px;
   cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+
+  /* navbar */
+  #navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar__toggle-btn {
+    display: block;
+  }
+  
+  .navbar__menu__Container {
+    width: 100vw;
+    min-width: 250px;
+  }
+
+  .navbar__menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* about */
+  .about__card {
+    flex-direction: column;
+    width: 440px;
+    height: 1000px;
+    margin: 0 auto;
+  }
+
+  .list__Container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image__Container {
+    margin: 0 auto;
+  }
+
+  .item__Container {
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .about__card {
+    height: 1720px;
+  }
+
+  .about__info {
+    height: 650px;
+  }
+
+  .description {
+    height: 540px;
+  }
+
+  .info__divide {
+    width: 250px;
+    height: 1px;
+    margin: 0 auto;
+  }
+
+  /* skill */
+
+  .skills__container {
+    flex-wrap: wrap;
+    width: 450px;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .project__projects {
+    width: 450px;
+    height: 5000px;
+  }
 }
 
 #concat {
