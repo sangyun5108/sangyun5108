@@ -68,7 +68,6 @@ a {
 .navbar__menu {
   height: 51px;
   display: flex;
-  background-color: var(--color-navbar);
 }
 
 .navbar__item {
