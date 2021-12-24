@@ -9,6 +9,7 @@
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+  scroll-behavior: smooth;
 }
 
 html,body {
@@ -71,7 +72,7 @@ a {
 }
 
 .navbar__item {
-  margin: 0 25px;
+  padding: 0 25px;
   line-height: 51px;
   opacity: 0.5;
   cursor: pointer;
