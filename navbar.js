@@ -61,7 +61,6 @@ function goCorrectPage(e){
 }
 
 // 화면 너비 768px 이하인 경우 navbar toggle 버튼 사용
-
 let navbarToggle = false;
 
 function onClickToggleMenu(){
