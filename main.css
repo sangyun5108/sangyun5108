@@ -446,7 +446,7 @@ a {
 }
 
 .goback__first {
-  margin-top: 50px;
+  margin-bottom: 30px;
   font-size: 40px;
   cursor: pointer;
 }
@@ -533,7 +533,7 @@ a {
 
   .project__projects {
     width: 450px;
-    height: 5000px;
+    flex-wrap: wrap;
   }
 }
 

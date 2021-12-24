@@ -33,8 +33,16 @@ function filterProject(type){
   }
 }
 
+function onClickIcon(){
+  const goUpIcon = document.querySelector('.goback__first');
+  goUpIcon.addEventListener('click',()=>{
+    document.querySelector('#home').scrollIntoView(false);
+  });
+}
+
 function init(){
   onClickButton();
+  onClickIcon();
 }
 
 init();
