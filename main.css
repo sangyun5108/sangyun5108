@@ -67,6 +67,7 @@ a {
 }
 
 .navbar__menu {
+  background-color: var(--color-navbar);
   height: 51px;
   display: flex;
 }
@@ -279,6 +280,7 @@ a {
   min-height: 700px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -323,6 +325,7 @@ a {
 #project{
   background-color: var(--color-white);
   min-height:110vh;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
