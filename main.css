@@ -225,7 +225,7 @@ a {
   min-width: 300px;
   min-height: 300px;
   border-radius: 50%;
-  background-image: url('./images/profile_image.JPG');
+  background-image: url('./images/profile_image.jpg');
   background-position: center;
   background-size: cover;
 }
