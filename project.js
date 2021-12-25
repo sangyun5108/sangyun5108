@@ -53,9 +53,9 @@ function onClickIcon(){
   });
 }
 
-function init(){
+function project(){
   onClickButton();
   onClickIcon();
 }
 
-init();
+project();

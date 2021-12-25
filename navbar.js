@@ -73,11 +73,11 @@ function onClickToggleMenu(){
   }); 
 }
 
-
-function init(){
+function navbar(){
   changeScrollY(); // 스크롤 이벤트 등록
   onClickNavbarItems(); // nav 아이템 클릭 등록
   onClickToggleMenu(); // toggle 메뉴 기능 구현(반응형)
 }
 
-init();
+
+navbar();

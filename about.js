@@ -8,8 +8,8 @@ function onClickButton(){
   });
 }
 
-function init(){
+function about(){
   onClickButton();
 }
 
-init();
+about();
