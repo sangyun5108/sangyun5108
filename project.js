@@ -18,17 +18,30 @@ function findTypeButton(e){
 
 function filterProject(type){
   const projects = document.querySelectorAll('.project__container');
+    
   if(type==='all'){
     projects.forEach((project)=>{
-      project.classList.remove('display');
-    })
+      project.classList.add('anim-out');
+      setTimeout(()=>{
+        project.classList.remove('display');
+      },500);
+      setTimeout(()=>{
+        project.classList.remove('anim-out');
+      },800);
+    });
   }else{
     projects.forEach((project,index)=>{
-      if(type===project.dataset.type){
-        project.classList.remove('display');
-      }else{
-        project.classList.add('display');
-      }
+      project.classList.add('anim-out');
+      setTimeout(()=>{
+        if(type===project.dataset.type){
+          project.classList.remove('display');
+        }else{
+          project.classList.add('display');
+        }
+      },500);
+      setTimeout(()=>{
+        project.classList.remove('anim-out');
+      },800);
     });
   }
 }
