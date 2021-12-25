@@ -24,10 +24,10 @@ function filterProject(type){
       project.classList.add('anim-out');
       setTimeout(()=>{
         project.classList.remove('display');
-      },500);
+      },400);
       setTimeout(()=>{
         project.classList.remove('anim-out');
-      },800);
+      },700);
     });
   }else{
     projects.forEach((project,index)=>{
@@ -41,7 +41,7 @@ function filterProject(type){
       },500);
       setTimeout(()=>{
         project.classList.remove('anim-out');
-      },800);
+      },700);
     });
   }
 }
