@@ -395,6 +395,12 @@ a {
   background-size: cover;
 }
 
+.moneydiary {
+  background-image: url('./images/moneydiary.png');
+  background-position: center;
+  background-size: cover;
+}
+
 .project__description {
   width: 100%;
   height: 100%;
