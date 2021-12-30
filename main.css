@@ -448,6 +448,14 @@ a {
 }
 
 .description__links {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 25px;
+}
+
+.portfolio .description__links {
   width: 50px;
   display: flex;
   justify-content: space-between;
