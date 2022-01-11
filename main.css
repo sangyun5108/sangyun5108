@@ -14,7 +14,6 @@
 
 html,body {
   width: 100vw;
-  height: 400vh;
 }
 
 button {
@@ -329,7 +328,6 @@ a {
 
 #project{
   background-color: var(--color-white);
-  min-height:110vh;
   padding-top: 100px;
   display: flex;
   flex-direction: column;
@@ -469,7 +467,7 @@ a {
 }
 
 .goback__first {
-  margin-bottom: 30px;
+  margin-bottom:10px;
   font-size: 40px;
   cursor: pointer;
 }
@@ -565,6 +563,8 @@ a {
 }
 
 #footer {
+  display: flex;
+  bottom:0px;
   height: 90px;
   min-height: 130px;
   background-color:var(--color-black);
